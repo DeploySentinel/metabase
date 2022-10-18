@@ -2,7 +2,6 @@ name: E2E Tests
 
 on:
   push:
-    branches: [main]
     branches:
       - "master"
       - 'release-**'
@@ -12,7 +11,7 @@ on:
       - ".circleci/**"
       - "**.unit.spec.*"
   pull_request:
-    branches: [main]
+    branches: [master]
 
 jobs:
 
